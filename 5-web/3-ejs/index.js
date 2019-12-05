@@ -2,6 +2,7 @@ const express = require('express');
 
 const server = express();
 
+// there are other view engines: Pugjs, Handlebars, react+jsx
 server.set('view engine', 'ejs');
 
 server.get('/', (req, res) => {
@@ -13,5 +14,5 @@ server.get('/about', (req, res) => {
 });
 
 server.listen(4242, () => {
-  console.log('Express Server is running...');
+  console.log('Server is running...');
 });
